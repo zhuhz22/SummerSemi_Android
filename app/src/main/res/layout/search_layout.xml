@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="72dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flag_flag">
+
+        <RadioButton
+            android:id="@+id/radio_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="娱乐" />
+
+        <RadioButton
+            android:id="@+id/radio_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="军事" />
+
+        <RadioButton
+            android:id="@+id/radio_button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="教育" />
+
+        <RadioButton
+            android:id="@+id/radio_button_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="文化" />
+
+        <RadioButton
+            android:id="@+id/radio_button_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="健康" />
+
+        <RadioButton
+            android:id="@+id/radio_button_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="财经" />
+
+        <RadioButton
+            android:id="@+id/radio_button_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="体育" />
+
+        <RadioButton
+            android:id="@+id/radio_button_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="汽车" />
+
+        <RadioButton
+            android:id="@+id/radio_button_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="科技" />
+
+        <RadioButton
+            android:id="@+id/radio_button_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:text="社会" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/flag_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Search Your News"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/search_start"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
+        android:text="SEARCH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/text_startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
+        android:text="StartDate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#673AB7"
+        app:layout_constraintStart_toEndOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/flag_flag" />
+
+    <TextView
+        android:id="@+id/text_enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:text="EndDate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#673AB7"
+        app:layout_constraintStart_toEndOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/text_startdate" />
+
+    <EditText
+        android:id="@+id/edit_end_date"
+        android:layout_width="122dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+
+        android:hint="xxxx-xx-xx"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_enddate"
+        app:layout_constraintTop_toBottomOf="@+id/edit_start_date" />
+
+    <EditText
+        android:id="@+id/edit_start_date"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="30dp"
+        android:hint="xxxx-xx-xx"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_startdate"
+        app:layout_constraintTop_toBottomOf="@+id/flag_flag" />
+
+    <TextView
+        android:id="@+id/key_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="83dp"
+        android:text="KeyWords"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#673AB7"
+        app:layout_constraintStart_toEndOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/text_enddate" />
+
+    <EditText
+        android:id="@+id/edit_words"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:hint="KeyWords"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/key_word"
+        app:layout_constraintTop_toBottomOf="@+id/edit_end_date" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:text="注：类别不选则为全部；\n日期输入的连字符请用英文-"
+        app:layout_constraintStart_toEndOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/edit_words" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
